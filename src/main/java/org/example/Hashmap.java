@@ -9,10 +9,10 @@ public class Hashmap {
         HashMap<Integer,String> map=new HashMap<>();
         String s1= "Key-Value pairs: ";
 
-        map.put(4,"Grapes");
-        map.put(2,"Orange");
-        map.put(3,"Apple");
-        map.put(1,"JackFruit");
+        map.put(4,"ram");
+        map.put(2,"shyam");
+        map.put(3,"jam");
+        map.put(1,"spam");
 
         l.log(Level.INFO,()->"Size: " +map.size());
         l.log(Level.INFO,()->"Values : " + map.values());
@@ -26,7 +26,7 @@ public class Hashmap {
         l.log(Level.INFO,()-> s1 +map.entrySet());
 
         l.info("After replacing ");
-        map.replace(2,"Kiwi");
+        map.replace(1,"Friends");
         l.log(Level.INFO,()-> s1 + map.entrySet());
     }
 }
